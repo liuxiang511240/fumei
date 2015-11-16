@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @prose.title %>
+</p>
+<p>
+  <b>content:</b>  <br/>
+  <%= @prose.content %>
+</p>
+<p>
+  <b>author:</b>
+  <%= @prose.author %>
+</p>
+<%= link_to 'Edit', edit_prose_path(@prose) %> |
+<%= link_to 'Back', proses_path %>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liupl</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container">
+  <%= render :partial => 'layouts/header' -%>
+  <p class="notice"><%= notice %></p>
+
+  <p class="alert"><%= alert %></p>
+  <div class="inner wrap clearfix">
+    <div class="inner_top"><%= render :partial => 'layouts/top' -%></div>
+    <div class="sidebar"><%= render :partial => 'layouts/sidebar' -%></div>
+    <div class="content clearfix"><%= yield %></div>
+  </div>
+  <%= render :partial => 'layouts/footer' -%>
+</div>
+</body>
+</html>

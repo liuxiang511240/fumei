@@ -1,0 +1,1278 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:10:42 +0800
+Served asset /rails.png - 200 OK (18ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:21:03 +0800
+Served asset /rails.png - 304 Not Modified (22ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:21:41 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:27:02 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:28:20 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:28:37 +0800
+Served asset /rails.png - 304 Not Modified (12ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2015-11-13 18:28:48 +0800
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2015-11-13 18:32:42 +0800
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (14.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2015-11-13 18:33:46 +0800
+
+AbstractController::ActionNotFound (The action 'show' could not be found for HomeController):
+  actionpack (3.2.14) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  mongoid (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.0.23) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__3213079524740871466__call__1255111295412343931__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 18:33:54 +0800
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 28ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-11-13 18:33:54 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 50ms (Views: 47.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 18:33:54 +0800
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/home.css.scssc: can't dump anonymous class #<Class:0x007fe82da16ef0>
+Compiled home.css  (31ms)  (pid 46138)
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/users.css.scssc: can't dump anonymous class #<Class:0x007fe82da16ef0>
+Compiled users.css  (1ms)  (pid 46138)
+Compiled application.css  (60ms)  (pid 46138)
+Served asset /application.css - 200 OK (87ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 18:33:54 +0800
+Compiled jquery.js  (1ms)  (pid 46138)
+Compiled jquery_ujs.js  (0ms)  (pid 46138)
+Compiled home.js  (372ms)  (pid 46138)
+Compiled users.js  (33ms)  (pid 46138)
+Compiled application.js  (494ms)  (pid 46138)
+Served asset /application.js - 200 OK (562ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:34:49 +0800
+Served asset /rails.png - 304 Not Modified (41ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 18:34:56 +0800
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 13ms
+
+ActionView::MissingTemplate (Missing template home/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/tony/jiemian/liupl/app/views"
+  * "/Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/devise-3.4.0/app/views"
+):
+  actionpack (3.2.14) lib/action_view/path_set.rb:58:in `find'
+  actionpack (3.2.14) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (3.2.14) lib/action_view/renderer/abstract_renderer.rb:3:in `find_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (3.2.14) lib/action_view/renderer/template_renderer.rb:10:in `render'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.14) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.14) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.14) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.14) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.14) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:414:in `_run__1612652655736496278__process_action__556251395773906664__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.14) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.14) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.14) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.14) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  actionpack (3.2.14) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.14) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.14) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.14) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.14) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  mongoid (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in `block in call'
+  mongoid (3.0.23) lib/mongoid/unit_of_work.rb:39:in `unit_of_work'
+  mongoid (3.0.23) lib/rack/mongoid/middleware/identity_map.rb:34:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.7) lib/rack/etag.rb:23:in `call'
+  rack (1.4.7) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.7) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `_run__3213079524740871466__call__1255111295412343931__callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.14) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.14) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/tony/.rvm/rubies/ruby-1.9.3-p551/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 18:35:30 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 2.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 18:35:30 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 18:35:30 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:35:33 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:35:36 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:36:13 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 18:36:23 +0800
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 18:36:52 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 9ms (Views: 8.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 18:36:52 +0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 18:36:52 +0800
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 19:00:45 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (16.8ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionController::RoutingError (No route matches {:controller=>"users"}):
+  app/views/layouts/_top.erb:3:in `_app_views_layouts__top_erb___3163296340496775032_70288556577580'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__3111946965970350251_70288581284180'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 19:01:49 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (1.3ms)
+  Rendered layouts/_sidebar.erb (0.4ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 6ms (Views: 5.4ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 19:01:49 +0800
+Served asset /liu0.jpg - 200 OK (4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:01:49 +0800
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/authors.css.scssc: can't dump anonymous class #<Class:0x007fdaaade04b8>
+Compiled authors.css  (24ms)  (pid 46145)
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/pieces.css.scssc: can't dump anonymous class #<Class:0x007fdaaade04b8>
+Compiled pieces.css  (1ms)  (pid 46145)
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/poetries.css.scssc: can't dump anonymous class #<Class:0x007fdaaade04b8>
+Compiled poetries.css  (1ms)  (pid 46145)
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/proses.css.scssc: can't dump anonymous class #<Class:0x007fdaaade04b8>
+Compiled proses.css  (1ms)  (pid 46145)
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/scaffolds.css.scssc: can't dump anonymous class #<Class:0x007fdaaade04b8>
+Compiled scaffolds.css  (5ms)  (pid 46145)
+Warning. Error encountered while saving cache /Users/tony/jiemian/liupl/tmp/cache/sass/52cfe6c003f63a3e894e603f2637bb6145ba0ab0/songs.css.scssc: can't dump anonymous class #<Class:0x007fdaaade04b8>
+Compiled songs.css  (1ms)  (pid 46145)
+Compiled application.css  (88ms)  (pid 46145)
+Served asset /application.css - 200 OK (162ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:01:49 +0800
+Compiled authors.js  (204ms)  (pid 46145)
+Compiled pieces.js  (33ms)  (pid 46145)
+Compiled poetries.js  (32ms)  (pid 46145)
+Compiled proses.js  (33ms)  (pid 46145)
+Compiled songs.js  (32ms)  (pid 46145)
+Compiled application.js  (381ms)  (pid 46145)
+Served asset /application.js - 200 OK (473ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-11-13 19:01:53 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.8ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.9ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 19:01:54 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (16.6321ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2670ms)
+  Rendered songs/index.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.9ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 19:01:54 +0800
+Served asset /liu1.jpg - 200 OK (20ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 19:01:56 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2689ms)
+  Rendered poetries/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 19:01:56 +0800
+Served asset /liu2.jpg - 200 OK (35ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:01:56 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 19:01:58 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2539ms)
+  Rendered proses/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:01:58 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 19:01:59 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6230ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2151ms)
+  Rendered pieces/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:01:59 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 19:01:59 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 19:02:01 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 19:03:24 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (20.1249ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2120ms)
+  Rendered pieces/index.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_header.erb (0.3ms)
+  Rendered layouts/_top.erb (1.5ms)
+  Rendered layouts/_sidebar.erb (0.5ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 109ms (Views: 108.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:03:24 +0800
+Served asset /application.css - 304 Not Modified (59ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:03:24 +0800
+Served asset /application.js - 304 Not Modified (102ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 19:03:24 +0800
+Served asset /liu0.jpg - 304 Not Modified (9ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 19:03:26 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5920ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2220ms)
+  Rendered pieces/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:03:26 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:03:26 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 19:03:26 +0800
+Served asset /liu1.jpg - 304 Not Modified (76ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 19:03:27 +0800
+Served asset /rails.png - 304 Not Modified (53ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 19:03:29 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 19:38:26 +0800
+Served asset /rails.png - 304 Not Modified (64ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 19:38:48 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 19:39:01 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (1.8ms)
+  Rendered layouts/_sidebar.erb (0.4ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 82.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:39:02 +0800
+Served asset /application.css - 304 Not Modified (82ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:39:02 +0800
+Served asset /application.js - 304 Not Modified (112ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 19:39:02 +0800
+Served asset /liu2.jpg - 304 Not Modified (8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 19:39:39 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-11-13 19:46:51 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.8ms)
+  Rendered layouts/_sidebar.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 35.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:46:52 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:46:52 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 19:46:52 +0800
+Served asset /liu1.jpg - 304 Not Modified (32ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 19:47:08 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (17.6871ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2000ms)
+  Rendered proses/index.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.9ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:47:08 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:47:08 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 19:47:08 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 19:47:10 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2379ms)
+  Rendered poetries/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 6.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 19:47:10 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 19:47:10 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 19:47:10 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:11:38 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.4079ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.1919ms)
+  Rendered poetries/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 19ms (Views: 18.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:11:39 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:11:39 +0800
+Served asset /application.js - 304 Not Modified (32ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:11:39 +0800
+Served asset /liu0.jpg - 304 Not Modified (26ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 20:11:45 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2491ms)
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:11:45 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:11:45 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:11:45 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 20:11:47 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2530ms)
+  Rendered songs/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:11:47 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:11:47 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:11:47 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 20:21:43 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.3588ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2162ms)
+  Rendered songs/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 23.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:21:43 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:21:43 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:21:43 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:21:44 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2770ms)
+  Rendered poetries/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:21:44 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:21:44 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:21:44 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:21:52 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2339ms)
+  Rendered poetries/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:21:52 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:21:52 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:21:52 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:23:00 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2699ms)
+  Rendered poetries/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.8ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:23:00 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:23:00 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:23:00 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries/new" for 127.0.0.1 at 2015-11-13 20:23:01 +0800
+Processing by PoetriesController#new as HTML
+  Rendered poetries/_form.html.erb (221.0ms)
+  Rendered poetries/new.html.erb within layouts/application (221.9ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 278ms (Views: 277.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:23:02 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:23:02 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:23:02 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries/new" for 127.0.0.1 at 2015-11-13 20:27:50 +0800
+Processing by PoetriesController#new as HTML
+  Rendered poetries/_form.html.erb (1.4ms)
+  Rendered poetries/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:50 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:50 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:27:50 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 20:27:51 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.3483ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.1671ms)
+  Rendered pieces/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:51 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:51 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:27:51 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 20:27:53 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2422ms)
+  Rendered proses/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 5.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:53 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:53 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:27:53 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:27:54 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2060ms)
+  Rendered poetries/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.8ms)
+  Rendered layouts/_sidebar.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:54 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:54 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:27:54 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 20:27:55 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2019ms)
+  Rendered songs/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:55 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:55 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:27:55 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-11-13 20:27:57 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.8ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:57 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:57 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:27:57 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2670ms)
+  Rendered songs/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:27:58 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2468ms)
+  Rendered songs/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2470ms)
+  Rendered poetries/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:27:59 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 20:28:00 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2298ms)
+  Rendered proses/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:00 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:00 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:28:00 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2203ms)
+  Rendered pieces/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2491ms)
+  Rendered proses/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.8ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:28:01 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2208ms)
+  Rendered pieces/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 32ms (Views: 32.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2661ms)
+  Rendered proses/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:28:03 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-11-13 20:28:04 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2151ms)
+  Rendered poetries/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:04 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:04 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-11-13 20:28:04 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-11-13 20:28:05 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2499ms)
+  Rendered proses/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:05 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:05 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:28:05 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 20:28:06 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2382ms)
+  Rendered pieces/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:28:06 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:28:06 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu1.jpg" for 127.0.0.1 at 2015-11-13 20:28:06 +0800
+Served asset /liu1.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-11-13 20:29:35 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2351ms)
+  Rendered pieces/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 4.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:29:35 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:29:35 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:29:35 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 20:29:36 +0800
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-11-13 20:31:11 +0800
+Processing by UsersController#index as HTML
+  Rendered users/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.erb (0.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_sidebar.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 4ms (Views: 3.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-11-13 20:31:11 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-11-13 20:31:11 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu0.jpg" for 127.0.0.1 at 2015-11-13 20:31:11 +0800
+Served asset /liu0.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-11-13 20:31:12 +0800
+Served asset /rails.png - 304 Not Modified (0ms)

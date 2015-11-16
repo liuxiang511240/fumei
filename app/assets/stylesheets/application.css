@@ -1,0 +1,248 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+/* =reset elements ========================================*/
+html, body, div, span, applet, object, iframe, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: inherit;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+
+a img, iframe {
+    border: none;
+}
+
+/*img {*/
+/*display: inline;*/
+/*}*/
+
+ol, ul, dl {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+select {
+    font-family: verdana, sans-serif;
+    font-size: 13px;
+}
+
+mark {
+    background: none;
+    color: #f00;
+}
+
+/* =clearfix ==============================================*/
+/* new clearfix */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+*:first-child + html .clearfix {
+    zoom: 1;
+}
+
+/* = body==============================================*/
+a {
+    text-decoration: none;
+    color: #2151bb;
+}
+
+a:hover {
+    color: #e7290e;
+}
+
+body {
+    font: 14px "微軟正黑體", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    width: expression(document.body.clientWidth > 1000? "1000px": "auto" );
+    padding: 0 16px;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #BBBBBB;
+    padding: 5px;
+}
+
+table th {
+    background-color: #eeeeee;
+}
+
+.inner {
+    padding: 1em 1.5em 1em 1.5em;
+    background: #fff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 8px #999;
+    -webkit-box-shadow: 0px 0px 8px #999;
+    box-shadow: 0px 0px 8px #999;
+}
+
+#footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar {
+    float: right;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #e6e5ff;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 8px #999;
+    -webkit-box-shadow: 0px 0px 8px #999;
+    box-shadow: 0px 0px 8px #999;
+}
+
+.content {
+    float: left;
+    width: 730px;
+    margin-top: 10px;
+}
+
+.inner_top {
+    height: 40px;
+    background-color: #8ccc2f;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 8px #999;
+    -webkit-box-shadow: 0px 0px 8px #999;
+    box-shadow: 0px 0px 8px #999;
+}
+
+.inner_top li {
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    vertical-align: middle;
+    min-width: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.pagin, .pagin2 {
+    float: left;
+    padding: 5px 0;
+}
+
+.pagin li {
+    float: left;
+}
+
+.pagin .current, .pagin .current:hover {
+    color: #ca1f27;
+    font-weight: bold;
+    background: none !important;
+}
+
+.pagin2 .active a, .pagin2 .active a:hover {
+    color: #ca1f27;
+    font-weight: bold;
+    background: none !important;
+}
+
+.pagin2 .active a {
+    border: medium none;
+}
+
+.pagin .text, .pagin .current {
+    border: medium none;
+}
+
+.pagin a, .pagin span, .pagin2 a {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-right: 4px;
+    overflow: hidden;
+    padding: 2px 6px;
+    color: #005aa0;
+}
+
+.pagin2 li {
+    float: left;
+}
+
+.pagin a:hover, .pagin2 a:hover {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 5px;
+    background: #ca1f27;
+    border: none;
+    overflow: hidden;
+    padding: 2px 6px;
+    color: #fff;
+    font-weight: bold;
+}
