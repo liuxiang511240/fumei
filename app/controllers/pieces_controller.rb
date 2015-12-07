@@ -37,7 +37,7 @@ class PiecesController < ApplicationController
   end
 
   private
-    def set_piece
-      @piece = Piece.find(params[:id])
-    end
+  def set_piece
+    @piece = Piece.find(params[:id])
+  end
 end

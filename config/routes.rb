@@ -1,4 +1,4 @@
-Liupl::Application.routes.draw do
+FuMei::Application.routes.draw do
   resources :pieces
 
 
