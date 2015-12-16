@@ -29,6 +29,7 @@ gem 'bootstrap-sass', '2.1.1'
 gem 'bootstrap-will_paginate'
 gem 'devise','3.4.0'
 gem 'thin'
+gem 'annotate'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

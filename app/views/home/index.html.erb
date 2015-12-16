@@ -1,0 +1,32 @@
+<div class="section">
+  <div class="top">诗词</div>
+  <div class="middle">
+    <% @poetries.each do |song| %>
+        <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
+    <% end %>
+  </div>
+</div>
+<div class="section">
+  <div class="top">美文</div>
+  <div class="middle">
+    <% @proses.each do |song| %>
+        <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
+    <% end %>
+  </div>
+</div>
+<div class="section">
+  <div class="top">段子</div>
+  <div class="middle">
+    <% @pieces.each do |song| %>
+        <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
+    <% end %>
+  </div>
+</div>
+<div class="section">
+  <div class="top">歌曲</div>
+  <div class="middle">
+    <% @songs.each do |song| %>
+        <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
+    <% end %>
+  </div>
+</div>

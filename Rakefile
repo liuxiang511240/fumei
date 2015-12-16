@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Liupl::Application.load_tasks
+FuMei::Application.load_tasks
