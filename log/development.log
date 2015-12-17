@@ -6199,3 +6199,87 @@ NoMethodError (undefined method `paginate' for User:Class):
   Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
   Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
   Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-17 20:45:23 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (20.4141ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4761ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4599ms)
+  Rendered users/index.html.erb within layouts/application (204.6ms)
+Completed 500 Internal Server Error in 245ms
+
+ActionView::Template::Error (undefined method `total_pages' for #<Array:0x007fc182ccd7d8>):
+    27:   <% end %>
+    28: </table>
+    29: <div class="panel-footer clearfix">
+    30:   <%= will_paginate @topics %>
+    31: </div>
+  app/views/users/index.html.erb:30:in `_app_views_users_index_html_erb__744644739502842143_70234548687920'
+  app/controllers/users_controller.rb:9:in `index'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-17 20:46:31 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `paginate' for User:Class):
+  app/controllers/users_controller.rb:10:in `index'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-17 20:47:57 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8502ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3741ms)
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5119ms)
+  Rendered layouts/_header.erb (2.1ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 104.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-17 20:47:57 +0800
+Served asset /application.css - 304 Not Modified (79ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-17 20:48:23 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7310ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3300ms)
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4900ms)
+  Rendered layouts/_header.erb (1.4ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-17 20:48:23 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-17 20:48:26 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5910ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3331ms)
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3431ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-17 20:48:26 +0800
+Served asset /application.css - 304 Not Modified (0ms)

@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
   before_filter :set_user, only: [:show, :edit, :update, :destroy]
   skip_before_filter :authenticate_user!
+  require 'will_paginate'
+  require 'will_paginate/array'
 
   respond_to :html
 
   def index
-    @users = User.all
+    @users = User.all.paginate(:per_page => 15, :page => params[:page]||1)
     respond_with(@users)
   end
 
