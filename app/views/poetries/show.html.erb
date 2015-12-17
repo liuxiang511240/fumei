@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
 <p>
-  <b>Title:</b>
+  <b>标题:</b>
   <%= @poetry.title %>
 </p>
 <p>
-  <b>content:</b>  <br/>
+  <b>内容:</b>  <br/>
   <%= @poetry.content %>
 </p>
 <p>
-  <b>author:</b>
+  <b>作者:</b>
   <%= @poetry.author %>
 </p>
 
-<%= link_to 'Edit', edit_poetry_path(@poetry) %> |
-<%= link_to 'Back', poetries_path %>
+<%= link_to '编辑', edit_poetry_path(@poetry) %> |
+<%= link_to '返回', poetries_path %>

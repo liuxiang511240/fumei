@@ -1,11 +1,11 @@
 <ul>
-  <li><%= link_to '首页', {controller: 'home'} -%></li>
-  <li><%= link_to '诗词', {controller: 'poetries'} -%></li>
-  <li><%= link_to '美文', {controller: 'proses'} -%></li>
-  <li><%= link_to '段子', {controller: 'pieces'} -%></li>
-  <li><%= link_to '歌曲', {controller: 'songs'} -%></li>
-  <li><%= link_to '作者', {controller: 'authors'} -%></li>
+  <li><%= link_to '首页', '/home' -%></li>
+  <li><%= link_to '诗词', '/poetries' -%></li>
+  <li><%= link_to '美文', '/proses' -%></li>
+  <li><%= link_to '段子', '/pieces' -%></li>
+  <li><%= link_to '歌曲', '/songs' -%></li>
+  <li><%= link_to '作者', '/authors' -%></li>
   <% if current_user and current_user.is_admin? %>
-      <li><%= link_to '用户', {controller: 'users'} -%></li>
+      <li><%= link_to '用户', '/users' -%></li>
   <% end %>
 </ul>

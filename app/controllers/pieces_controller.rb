@@ -1,5 +1,6 @@
 class PiecesController < ApplicationController
   before_filter :set_piece, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :authenticate_user!, only: [:index, :show]
 
   respond_to :html
 

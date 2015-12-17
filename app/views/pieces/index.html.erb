@@ -1,29 +1,29 @@
-<h1>Listing pieces</h1>
+<h1>段子列表</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>content</th>
-    <th>Author</th>
+    <th>标题</th>
+    <th>内容</th>
+    <th>作者</th>
     <th>时间</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>操作</th>
   </tr>
 
-<% @pieces.each do |piece| %>
-  <tr>
-    <td><%= piece.title %></td>
-    <td><%= piece.content -%></td>
-    <td><%= piece.author -%></td>
-    <td><%= piece.created_at -%></td>
-    <td><%= link_to 'Show', piece %></td>
-    <td><%= link_to 'Edit', edit_piece_path(piece) %></td>
-    <td><%= link_to 'Destroy', piece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @pieces.each do |piece| %>
+      <tr>
+        <td><%= piece.title %></td>
+        <td width="60%"><%= piece.content -%></td>
+        <td><%= piece.author -%></td>
+        <td><%= piece.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
+        <td>
+          <%= link_to '查看', piece %>
+          <%= link_to '编辑', edit_piece_path(piece) %>
+          <%= link_to '删除', piece, method: :delete, data: {confirm: 'Are you sure?'} %>
+        </td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'New Piece', new_piece_path %>
+<%= link_to '新建段子', new_piece_path %>

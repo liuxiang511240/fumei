@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Title:</b>
+  <b>标题</b>
   <%= @prose.title %>
 </p>
 <p>
-  <b>content:</b>  <br/>
+  <b>内容</b>  <br/>
   <%= @prose.content %>
 </p>
 <p>
-  <b>author:</b>
+  <b>作者</b>
   <%= @prose.author %>
 </p>
-<%= link_to 'Edit', edit_prose_path(@prose) %> |
-<%= link_to 'Back', proses_path %>
+<%= link_to '编辑', edit_prose_path(@prose) %> |
+<%= link_to '返回', proses_path %>

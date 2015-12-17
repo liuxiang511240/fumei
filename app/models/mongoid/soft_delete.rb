@@ -14,10 +14,9 @@ module Mongoid
     def destroy
       run_callbacks(:destroy) do
         if persisted?
-          set(deleted_at: Time.now.utc)
-          set(updated_at: Time.now.utc)
+          self.deleted_at=Time.now
         end
-
+        save
         @destroyed = true
       end
       freeze

@@ -1,29 +1,29 @@
-<h1>Listing proses</h1>
+<h1>美文列表</h1>
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>content</th>
-    <th>Author</th>
+    <th>标题</th>
+    <th>内容</th>
+    <th>作者</th>
     <th>时间</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>操作</th>
   </tr>
 
-<% @proses.each do |prose| %>
-  <tr>
-    <td><%= prose.title %></td>
-    <td><%= prose.content -%></td>
-    <td><%= prose.author -%></td>
-    <td><%= prose.created_at -%></td>
-    <td><%= link_to 'Show', prose %></td>
-    <td><%= link_to 'Edit', edit_prose_path(prose) %></td>
-    <td><%= link_to 'Destroy', prose, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @proses.each do |prose| %>
+      <tr>
+        <td><%= prose.title %></td>
+        <td width="60%"><%= prose.content -%></td>
+        <td><%= prose.author -%></td>
+        <td><%= prose.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
+        <td>
+          <%= link_to '查看', prose %>
+          <%= link_to '编辑', edit_prose_path(prose) %>
+          <%= link_to '删除', prose, method: :delete, data: {confirm: 'Are you sure?'} %>
+        </td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
-<%= link_to 'New Prose', new_prose_path %>
+<%= link_to '新建美文', new_prose_path %>

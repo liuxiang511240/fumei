@@ -1,5 +1,6 @@
 class PoetriesController < ApplicationController
   before_filter :set_poetry, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :authenticate_user!, only: [:index, :show]
 
   respond_to :html
 
@@ -37,7 +38,7 @@ class PoetriesController < ApplicationController
   end
 
   private
-    def set_poetry
-      @poetry = Poetry.find(params[:id])
-    end
+  def set_poetry
+    @poetry = Poetry.find(params[:id])
+  end
 end

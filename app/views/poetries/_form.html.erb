@@ -11,21 +11,21 @@
         </div>
     <% end %>
     <div class="field">
-      <%= f.label :title %>
+      <%= f.label '标题' %>
       <br>
       <%= f.text_field :title %>
     </div>
     <div class="field">
-      <%= f.label :content %>
+      <%= f.label '内容' %>
       <br>
-      <%= f.text_area :content, :size => '100x15' %>
+      <%= f.text_area :content, :size => '100x20' %>
     </div>
     <div class="field">
-      <%= f.label :author %>
+      <%= f.label '作者' %>
       <br>
       <%= f.text_field :author %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit '确定' %>
     </div>
 <% end %>
