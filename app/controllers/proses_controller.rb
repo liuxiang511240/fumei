@@ -5,17 +5,14 @@ class ProsesController < ApplicationController
   respond_to :html
 
   def index
-    @proses = Prose.all
-    respond_with(@proses)
+    @proses = Prose.all.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show
-    respond_with(@prose)
   end
 
   def new
     @prose = Prose.new
-    respond_with(@prose)
   end
 
   def edit
@@ -24,21 +21,18 @@ class ProsesController < ApplicationController
   def create
     @prose = Prose.new(params[:prose])
     @prose.save
-    respond_with(@prose)
   end
 
   def update
     @prose.update_attributes(params[:prose])
-    respond_with(@prose)
   end
 
   def destroy
     @prose.destroy
-    respond_with(@prose)
   end
 
   private
-    def set_prose
-      @prose = Prose.find(params[:id])
-    end
+  def set_prose
+    @prose = Prose.find(params[:id])
+  end
 end

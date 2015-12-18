@@ -5,17 +5,14 @@ class PoetriesController < ApplicationController
   respond_to :html
 
   def index
-    @poetries = Poetry.all
-    respond_with(@poetries)
+    @poetries = Poetry.all.paginate(:page => params[:page]||1, :per_page => 15)
   end
 
   def show
-    respond_with(@poetry)
   end
 
   def new
     @poetry = Poetry.new
-    respond_with(@poetry)
   end
 
   def edit
@@ -24,17 +21,14 @@ class PoetriesController < ApplicationController
   def create
     @poetry = Poetry.new(params[:poetry])
     @poetry.save
-    respond_with(@poetry)
   end
 
   def update
     @poetry.update_attributes(params[:poetry])
-    respond_with(@poetry)
   end
 
   def destroy
     @poetry.destroy
-    respond_with(@poetry)
   end
 
   private

@@ -23,7 +23,10 @@
       </tr>
   <% end %>
 </table>
-
+<div class="panel-footer clearfix">
+  <%= will_paginate @pieces %>
+  共 <%= @pieces.total_entries %> 条
+</div>
 <br/>
 
 <%= link_to '新建段子', new_piece_path %>

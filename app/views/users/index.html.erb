@@ -1,6 +1,6 @@
 <h1>用户列表</h1>
 
-<table>
+<table width="100%">
   <tr>
     <th>邮箱</th>
     <th>昵称</th>
@@ -28,4 +28,5 @@
 </table>
 <div class="panel-footer clearfix">
   <%= will_paginate @users %>
+  共 <%= @users.total_entries %> 条
 </div>

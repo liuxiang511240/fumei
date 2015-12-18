@@ -5,17 +5,14 @@ class AuthorsController < ApplicationController
   respond_to :html
 
   def index
-    @authors = Author.all
-    respond_with(@authors)
+    @authors = Author.all.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show
-    respond_with(@author)
   end
 
   def new
     @author = Author.new
-    respond_with(@author)
   end
 
   def edit
@@ -24,17 +21,14 @@ class AuthorsController < ApplicationController
   def create
     @author = Author.new(params[:author])
     @author.save
-    respond_with(@author)
   end
 
   def update
     @author.update_attributes(params[:author])
-    respond_with(@author)
   end
 
   def destroy
     @author.destroy
-    respond_with(@author)
   end
 
   private

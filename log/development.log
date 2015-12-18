@@ -6283,3 +6283,1428 @@ Completed 200 OK in 6ms (Views: 4.6ms)
 
 Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-17 20:48:26 +0800
 Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 10:42:37 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (17.6709ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3231ms)
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3679ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 4.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 10:42:37 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 10:57:31 +0800
+Served asset /application.css - 304 Not Modified (68ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:06:43 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (22.0389ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3426ms)
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4351ms)
+  Rendered layouts/_header.erb (1.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 63.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:06:43 +0800
+Compiled bootstrap-select.min.css  (0ms)  (pid 18082)
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (64ms)  (pid 18082)
+Served asset /application.css - 200 OK (224ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:06:43 +0800
+Served asset /application.js - 304 Not Modified (284ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:07:12 +0800
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `paginate' for User:Class):
+  app/controllers/users_controller.rb:10:in `index'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:07:28 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (11.0991ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3369ms)
+  Rendered users/index.html.erb within layouts/application (22.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4661ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 88ms (Views: 74.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:07:28 +0800
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:07:28 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:08:07 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (34.8029ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3290ms)
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4578ms)
+  Rendered layouts/_header.erb (1.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 52.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:08:07 +0800
+Served asset /application.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:08:07 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:08:42 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (12.9359ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3190ms)
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (20.8488ms)
+  Rendered layouts/_header.erb (21.8ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 111ms (Views: 96.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:08:42 +0800
+Served asset /application.css - 304 Not Modified (32ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:08:42 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:12:36 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (24.2341ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3431ms)
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6139ms)
+  Rendered layouts/_header.erb (1.6ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 63.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:12:36 +0800
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:12:36 +0800
+Served asset /application.js - 304 Not Modified (20ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:13:14 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7670ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3467ms)
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4878ms)
+  Rendered layouts/_header.erb (1.4ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 66ms (Views: 64.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:13:14 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:13:14 +0800
+Served asset /application.js - 304 Not Modified (21ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:14:03 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (24.0970ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3319ms)
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5248ms)
+  Rendered layouts/_header.erb (1.6ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 108.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:14:04 +0800
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:14:04 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:28:22 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (16.0840ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.5341ms)
+  Rendered poetries/index.html.erb within layouts/application (5.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5281ms)
+  Rendered layouts/_header.erb (84.2ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 162ms (Views: 140.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:28:22 +0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:28:22 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/poetries/new" for 127.0.0.1 at 2015-12-18 11:28:27 +0800
+Processing by PoetriesController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7658ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3850ms)
+  Rendered poetries/_form.html.erb (146.3ms)
+  Rendered poetries/new.html.erb within layouts/application (154.4ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 187ms (Views: 157.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:28:27 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:28:27 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/poetries" for 127.0.0.1 at 2015-12-18 11:28:48 +0800
+Processing by PoetriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GyTj+wcZRVt54aahOGbyd7OoJWN+ZnOsfmOShplbr40=", "poetry"=>{"title"=>"但是不分手的", "content"=>"的所发生的多舒服舒服\r\n的所发生的广东省", "author"=>"哈韩"}, "commit"=>"确定"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7851ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4210ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "name"=>"哈韩"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (24.0321ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=admin collection=authors documents=[{"_id"=>"56737d7062d25d5d62000001", "name"=>"哈韩", "face"=>"", "dynasty"=>"", "birthday"=>"", "description"=>"", "updated_at"=>2015-12-18 03:28:48 UTC, "created_at"=>2015-12-18 03:28:48 UTC}] flags=[] (0.1650ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=admin collection=poetries documents=[{"_id"=>"56737d7062d25d5d62000002", "title"=>"但是不分手的", "content"=>"的所发生的多舒服舒服\r\n的所发生的广东省", "author"=>"哈韩", "comments_count"=>0, "likes_count"=>0, "comment_user_ids"=>[], "excellent"=>0, "author_id"=>0, "updated_at"=>2015-12-18 03:28:48 UTC, "created_at"=>2015-12-18 03:28:48 UTC}] flags=[] (0.2439ms)
+Redirected to http://local.jiemian.com:3005/poetries/56737d7062d25d5d62000002
+Completed 302 Found in 61ms
+
+
+Started GET "/poetries/56737d7062d25d5d62000002" for 127.0.0.1 at 2015-12-18 11:28:48 +0800
+Processing by PoetriesController#show as HTML
+  Parameters: {"id"=>"56737d7062d25d5d62000002"}
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "_id"=>"56737d7062d25d5d62000002"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4680ms)
+  Rendered poetries/show.html.erb within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4821ms)
+  Rendered layouts/_header.erb (1.4ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 55ms (Views: 53.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:28:48 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:28:48 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:28:51 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5708ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3231ms)
+  Rendered poetries/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3963ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:28:51 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:28:51 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:28:54 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6211ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3250ms)
+  Rendered poetries/index.html.erb within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4282ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 6ms (Views: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:28:54 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:28:54 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries/new" for 127.0.0.1 at 2015-12-18 11:28:56 +0800
+Processing by PoetriesController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6931ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3901ms)
+  Rendered poetries/_form.html.erb (1.7ms)
+  Rendered poetries/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.erb (0.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 5.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:28:56 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:28:56 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/poetries" for 127.0.0.1 at 2015-12-18 11:29:07 +0800
+Processing by PoetriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GyTj+wcZRVt54aahOGbyd7OoJWN+ZnOsfmOShplbr40=", "poetry"=>{"title"=>"对方身份的", "content"=>"的方式的发生\r\n的发送到发送到", "author"=>"还有"}, "commit"=>"确定"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6590ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3622ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "name"=>"还有"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2811ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=admin collection=authors documents=[{"_id"=>"56737d8362d25dad57000003", "name"=>"还有", "face"=>"", "dynasty"=>"", "birthday"=>"", "description"=>"", "updated_at"=>2015-12-18 03:29:07 UTC, "created_at"=>2015-12-18 03:29:07 UTC}] flags=[] (0.1078ms)
+  MOPED: 127.0.0.1:27017 INSERT       database=admin collection=poetries documents=[{"_id"=>"56737d8362d25dad57000004", "title"=>"对方身份的", "content"=>"的方式的发生\r\n的发送到发送到", "author"=>"还有", "comments_count"=>0, "likes_count"=>0, "comment_user_ids"=>[], "excellent"=>0, "author_id"=>0, "updated_at"=>2015-12-18 03:29:07 UTC, "created_at"=>2015-12-18 03:29:07 UTC}] flags=[] (0.0889ms)
+Redirected to http://local.jiemian.com:3005/poetries/56737d8362d25dad57000004
+Completed 302 Found in 5ms
+
+
+Started GET "/poetries/56737d8362d25dad57000004" for 127.0.0.1 at 2015-12-18 11:29:07 +0800
+Processing by PoetriesController#show as HTML
+  Parameters: {"id"=>"56737d8362d25dad57000004"}
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "_id"=>"56737d8362d25dad57000004"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4170ms)
+  Rendered poetries/show.html.erb within layouts/application (0.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3769ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 4.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:07 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:07 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:29:08 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6840ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3610ms)
+  Rendered poetries/index.html.erb within layouts/application (3.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (248.0471ms)
+  Rendered layouts/_header.erb (248.8ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 256ms (Views: 254.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:09 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:09 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:29:10 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (22.7761ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3340ms)
+  Rendered poetries/index.html.erb within layouts/application (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3567ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 6.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:10 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:10 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:29 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6371ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3378ms)
+  Rendered poetries/index.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3681ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:29 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:29 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:31 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6440ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3471ms)
+  Rendered poetries/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4122ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:31 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:31 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:32 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7191ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4070ms)
+  Rendered poetries/index.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4358ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:32 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:32 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:33 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6020ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3412ms)
+  Rendered poetries/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4020ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:33 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:33 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:36 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6540ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3746ms)
+  Rendered poetries/index.html.erb within layouts/application (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4020ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:36 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:36 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:38 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6721ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (24.0071ms)
+  Rendered poetries/index.html.erb within layouts/application (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4191ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 6.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:38 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:38 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:40 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6752ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3629ms)
+  Rendered poetries/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5457ms)
+  Rendered layouts/_header.erb (1.5ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:40 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:40 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:41 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6301ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3481ms)
+  Rendered poetries/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4470ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:41 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:41 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:43 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6058ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3331ms)
+  Rendered poetries/index.html.erb within layouts/application (1.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4370ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:43 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:43 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:44 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6640ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3080ms)
+  Rendered poetries/index.html.erb within layouts/application (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3719ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:44 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:44 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:46 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6459ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3510ms)
+  Rendered poetries/index.html.erb within layouts/application (1.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3741ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:46 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:46 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:48 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6380ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3719ms)
+  Rendered poetries/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3688ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:48 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:48 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=2" for 127.0.0.1 at 2015-12-18 11:29:49 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"2"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7670ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3378ms)
+  Rendered poetries/index.html.erb within layouts/application (1.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3510ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:49 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:49 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:29:50 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5929ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3369ms)
+  Rendered poetries/index.html.erb within layouts/application (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4048ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:50 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:29:50 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:29:58 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:32:19 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5121ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3049ms)
+  Rendered poetries/index.html.erb within layouts/application (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3312ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:32:19 +0800
+Compiled application.css  (2ms)  (pid 18082)
+Served asset /application.css - 200 OK (124ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:32:19 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:33:34 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6349ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4020ms)
+  Rendered poetries/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3767ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:33:34 +0800
+Compiled bootstrap.min.css  (24ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (40ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:33:34 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:34:15 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6869ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3438ms)
+  Rendered poetries/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3910ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:34:15 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (65ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:34:15 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:34:32 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6788ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3409ms)
+  Rendered poetries/index.html.erb within layouts/application (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3600ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:34:32 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (16ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:34:32 +0800
+Served asset /application.js - 304 Not Modified (22ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:34:43 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:35:02 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5889ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3369ms)
+  Rendered poetries/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3700ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:35:02 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:35:02 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:36:00 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (29.7270ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3889ms)
+  Rendered poetries/index.html.erb within layouts/application (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4418ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 74.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:36:01 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (227ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:36:01 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:36:14 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5949ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3269ms)
+  Rendered poetries/index.html.erb within layouts/application (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4411ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:36:14 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (2ms)  (pid 18082)
+Served asset /application.css - 200 OK (42ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:36:14 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:36:23 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5999ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3278ms)
+  Rendered poetries/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3757ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:36:23 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (41ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:36:23 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:36:49 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6001ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3538ms)
+  Rendered poetries/index.html.erb within layouts/application (2.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3908ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:36:49 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:36:49 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:37:04 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6640ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3481ms)
+  Rendered poetries/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3531ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 7ms (Views: 5.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:37:04 +0800
+Compiled bootstrap.min.css  (0ms)  (pid 18082)
+Compiled application.css  (1ms)  (pid 18082)
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:37:04 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:39:20 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.8903ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3669ms)
+  Rendered poetries/index.html.erb within layouts/application (2.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.6351ms)
+  Rendered layouts/_header.erb (31.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 40ms (Views: 37.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:39:21 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:39:21 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:39:40 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (23.0978ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3810ms)
+  Rendered poetries/index.html.erb within layouts/application (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4172ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 6.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:39:40 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:39:40 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:40:19 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7701ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3669ms)
+  Rendered poetries/index.html.erb within layouts/application (2.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4990ms)
+  Rendered layouts/_header.erb (12.9ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 21ms (Views: 18.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:40:19 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:40:19 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:42:59 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7071ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3510ms)
+  Rendered poetries/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4139ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 5.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:42:59 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:42:59 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:43:47 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (18.6892ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3500ms)
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `paginate' for #<Array:0x007ff22cba6a78>):
+  app/controllers/poetries_controller.rb:8:in `index'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.5ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:44:01 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3989ms)
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `paginate' for #<Array:0x007ff22b7b30e8>):
+  app/controllers/poetries_controller.rb:8:in `index'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:44:22 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9420ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3660ms)
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `paginate' for #<Array:0x007ffbce9a2c58>):
+  app/controllers/poetries_controller.rb:8:in `index'
+
+
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/tony/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:44:52 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.9921ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3870ms)
+  Rendered poetries/index.html.erb within layouts/application (122.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5062ms)
+  Rendered layouts/_header.erb (2.0ms)
+  Rendered layouts/_top.erb (0.6ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 178ms (Views: 175.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:44:52 +0800
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:44:52 +0800
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:45:14 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7730ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3729ms)
+  Rendered poetries/index.html.erb within layouts/application (11.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4179ms)
+  Rendered layouts/_header.erb (1.6ms)
+  Rendered layouts/_top.erb (0.5ms)
+  Rendered layouts/_footer.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 38.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:45:14 +0800
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:45:14 +0800
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:52:40 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (16.7921ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3660ms)
+  Rendered poetries/index.html.erb within layouts/application (88.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4900ms)
+  Rendered layouts/_header.erb (2.0ms)
+  Rendered layouts/_top.erb (0.7ms)
+  Rendered layouts/_footer.erb (0.3ms)
+Completed 200 OK in 214ms (Views: 195.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:52:40 +0800
+Served asset /application.css - 304 Not Modified (101ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:52:40 +0800
+Served asset /application.js - 304 Not Modified (164ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:53:38 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (73.6589ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3972ms)
+  Rendered poetries/index.html.erb within layouts/application (2.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4570ms)
+  Rendered layouts/_header.erb (1.4ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 182ms (Views: 106.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:53:38 +0800
+Compiled application.css  (1ms)  (pid 19134)
+Served asset /application.css - 200 OK (139ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:53:38 +0800
+Served asset /application.js - 304 Not Modified (33ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:54:03 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (29.2099ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3603ms)
+  Rendered poetries/index.html.erb within layouts/application (2.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4370ms)
+  Rendered layouts/_header.erb (1.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 52.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:54:03 +0800
+Served asset /application.css - 304 Not Modified (29ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:54:04 +0800
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/poetries?page=1" for 127.0.0.1 at 2015-12-18 11:58:45 +0800
+Processing by PoetriesController#index as HTML
+  Parameters: {"page"=>"1"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7081ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3309ms)
+  Rendered poetries/index.html.erb within layouts/application (3.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5462ms)
+  Rendered layouts/_header.erb (27.0ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 101ms (Views: 98.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:58:46 +0800
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:58:46 +0800
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:59:19 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7739ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3934ms)
+  Rendered poetries/index.html.erb within layouts/application (3.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5000ms)
+  Rendered layouts/_header.erb (25.5ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 113ms (Views: 110.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:19 +0800
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:19 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 11:59:26 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6249ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3402ms)
+  Rendered poetries/index.html.erb within layouts/application (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3769ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 6.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:26 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:26 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-12-18 11:59:27 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7141ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (21.3478ms)
+  Rendered proses/index.html.erb within layouts/application (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4759ms)
+  Rendered layouts/_header.erb (1.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 30ms (Views: 7.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:27 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:27 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-12-18 11:59:28 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7660ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3600ms)
+  Rendered pieces/index.html.erb within layouts/application (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4139ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:28 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:28 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-18 11:59:31 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6740ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (24.6661ms)
+  Rendered songs/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4711ms)
+  Rendered layouts/_header.erb (1.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 7.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:31 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:31 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-12-18 11:59:32 +0800
+Processing by AuthorsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7360ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3731ms)
+  Rendered authors/index.html.erb within layouts/application (3.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4113ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 8.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:32 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:32 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-12-18 11:59:34 +0800
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5953ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2799ms)
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4449ms)
+  Rendered layouts/_header.erb (1.4ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 11:59:34 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 11:59:34 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-18 12:00:38 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7560ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.1473ms)
+  Rendered layouts/_item.erb (0.4ms)
+  Rendered layouts/_item.erb (0.1ms)
+  Rendered layouts/_item.erb (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.6678ms)
+  Rendered layouts/_item.erb (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3741ms)
+  Rendered layouts/_item.erb (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3469ms)
+  Rendered layouts/_item.erb (0.0ms)
+  Rendered home/index.html.erb within layouts/application (33.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3967ms)
+  Rendered layouts/_header.erb (13.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 133ms (Views: 67.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 12:00:38 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 12:00:38 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 12:00:39 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6769ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3152ms)
+  Rendered poetries/index.html.erb within layouts/application (2.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3850ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 7.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 12:00:39 +0800
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 12:00:39 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-12-18 12:00:40 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7429ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2902ms)
+  Rendered proses/index.html.erb within layouts/application (1.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4699ms)
+  Rendered layouts/_header.erb (1.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 12:00:40 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 12:00:40 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-18 12:00:41 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.7749ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4060ms)
+  Rendered poetries/index.html.erb within layouts/application (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3810ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 8ms (Views: 5.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 12:00:41 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 12:00:41 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-18 12:00:42 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6647ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.7548ms)
+  Rendered layouts/_item.erb (0.0ms)
+  Rendered layouts/_item.erb (0.0ms)
+  Rendered layouts/_item.erb (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.4218ms)
+  Rendered layouts/_item.erb (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3881ms)
+  Rendered layouts/_item.erb (0.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (1.9219ms)
+  Rendered layouts/_item.erb (0.0ms)
+  Rendered home/index.html.erb within layouts/application (7.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3719ms)
+  Rendered layouts/_header.erb (1.0ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-18 12:00:42 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-18 12:00:42 +0800
+Served asset /application.js - 304 Not Modified (0ms)

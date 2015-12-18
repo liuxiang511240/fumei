@@ -22,7 +22,10 @@
       </tr>
   <% end %>
 </table>
-
+<div class="panel-footer clearfix">
+  <%= will_paginate @authors %>
+  共 <%= @authors.total_entries %> 条
+</div>
 <br/>
 
 <%= link_to '新建作者', new_author_path %>

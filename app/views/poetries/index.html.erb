@@ -23,7 +23,10 @@
       </tr>
   <% end %>
 </table>
-
+<div class="panel-footer clearfix">
+  <%= will_paginate @poetries %>
+  共 <%= @poetries.total_entries %> 条
+</div>
 <br/>
 
 <%= link_to '新建诗词', new_poetry_path %>

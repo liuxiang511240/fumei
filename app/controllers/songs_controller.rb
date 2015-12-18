@@ -5,17 +5,14 @@ class SongsController < ApplicationController
   respond_to :html
 
   def index
-    @songs = Song.all
-    respond_with(@songs)
+    @songs = Song.all.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show
-    respond_with(@song)
   end
 
   def new
     @song = Song.new
-    respond_with(@song)
   end
 
   def edit
@@ -24,17 +21,14 @@ class SongsController < ApplicationController
   def create
     @song = Song.new(params[:song])
     @song.save
-    respond_with(@song)
   end
 
   def update
     @song.update_attributes(params[:song])
-    respond_with(@song)
   end
 
   def destroy
     @song.destroy
-    respond_with(@song)
   end
 
   private

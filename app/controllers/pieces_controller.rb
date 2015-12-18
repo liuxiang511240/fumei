@@ -5,17 +5,14 @@ class PiecesController < ApplicationController
   respond_to :html
 
   def index
-    @pieces = Piece.all
-    respond_with(@pieces)
+    @pieces = Piece.all.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show
-    respond_with(@piece)
   end
 
   def new
     @piece = Piece.new
-    respond_with(@piece)
   end
 
   def edit
@@ -24,17 +21,14 @@ class PiecesController < ApplicationController
   def create
     @piece = Piece.new(params[:piece])
     @piece.save
-    respond_with(@piece)
   end
 
   def update
     @piece.update_attributes(params[:piece])
-    respond_with(@piece)
   end
 
   def destroy
     @piece.destroy
-    respond_with(@piece)
   end
 
   private

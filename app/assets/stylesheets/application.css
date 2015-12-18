@@ -189,6 +189,10 @@ table th {
     font-size: 16px;
 }
 
+.panel-footer {
+    vertical-align: middle;
+}
+
 .section .top {
     border-bottom: 1px solid #333333;
     height: 30px;
