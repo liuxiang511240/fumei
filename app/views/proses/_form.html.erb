@@ -18,7 +18,8 @@
     <div class="field">
       <%= f.label '内容' %>
       <br>
-      <%= f.text_area :content, :size => '87x15' %>
+      <!--<textarea id="editor" placeholder="这里输入内容" autofocus></textarea>-->
+      <%= f.text_area :content, :size => '87x15', :id => 'editor' %>
     </div>
     <div class="field">
       <%= f.label '作者' %>
@@ -29,3 +30,7 @@
       <%= f.submit '确定' %>
     </div>
 <% end %>
+
+<script>
+//    var editor = new Simditor({textarea: $('#editor')});
+</script>

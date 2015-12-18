@@ -30,6 +30,7 @@ gem 'bootstrap-will_paginate'
 gem 'devise','3.4.0'
 gem 'thin'
 gem 'annotate'
+gem 'simditor'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

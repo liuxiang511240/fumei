@@ -120,6 +120,7 @@ GEM
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
+    simditor (2.3.5)
     sprockets (2.2.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -161,6 +162,7 @@ DEPENDENCIES
   rails (= 3.2.14)
   rake (= 10.3.2)
   sass-rails (~> 3.2.3)
+  simditor
   thin
   turbolinks
   uglifier (>= 1.0.3)
