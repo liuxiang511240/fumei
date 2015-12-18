@@ -12,5 +12,5 @@
   <%= @piece.author %>
 </p>
 
-<%= link_to '编辑', edit_piece_path(@piece) %> |
+<%= link_to '编辑', edit_piece_path(@piece) if @piece.can_edit?(current_user) %> |
 <%= link_to '返回', pieces_path %>

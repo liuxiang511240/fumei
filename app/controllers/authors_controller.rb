@@ -21,14 +21,17 @@ class AuthorsController < ApplicationController
   def create
     @author = Author.new(params[:author])
     @author.save
+    respond_with(@author)
   end
 
   def update
     @author.update_attributes(params[:author])
+    respond_with(@author)
   end
 
   def destroy
     @author.destroy
+    respond_with(@author)
   end
 
   private

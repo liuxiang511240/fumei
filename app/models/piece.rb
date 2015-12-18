@@ -7,9 +7,10 @@ class Piece
   include Mongoid::CounterCache
   field :title, type: String, default: ''
   field :content, type: String, default: ''
-  field :user_id, type: Integer
+  field :user_id, type: String
+  field :updated_by, type: String
   field :author, type: String, default: ''
-  field :author_id, type: Integer
+  field :author_id, type: String
   field :last_comment_id, type: Integer
   field :commented_at, type: DateTime
   field :comments_count, type: Integer, default: 0
@@ -23,11 +24,22 @@ class Piece
   # 精华 0 否， 1 是
   field :excellent, type: Integer, default: 0
 
-  belongs_to :user, inverse_of: :pieces
+  belongs_to :user
+  belongs_to :author_class, :class_name => 'Author', :foreign_key => 'author_id'
   attr_accessible :title, :content, :author, :author_id, :user_id, :last_comment_id, :commented_at, :comments_count, :likes_count,
-                  :comment_user_ids, :last_commented_user_name, :who_deleted, :excellent, :deleted_at
+                  :comment_user_ids, :last_commented_user_name, :who_deleted, :excellent, :deleted_at, :updated_by
 
   before_save :update_author
+
+  def can_edit?(user)
+    return false if user.blank?
+    self.user_id==user.id or user.is_admin?
+  end
+
+  def can_delete?(user)
+    return false if user.blank?
+    user.is_admin?
+  end
 
   private
   def update_author

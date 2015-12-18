@@ -1,4 +1,4 @@
-<h1>用户列表</h1>
+<h4>用户列表</h4>
 
 <table width="100%">
   <tr>
@@ -20,8 +20,8 @@
         <td><%= user.last_sign_in_at.strftime('%Y-%m-%d %H:%M:%S') if user.last_sign_in_at.present? -%></td>
         <td><%= user.last_sign_in_ip -%></td>
         <td>
-          <%= link_to '编辑', edit_user_path(user) %>
-          <%= link_to '删除', user, method: :delete, data: {confirm: 'Are you sure?'} %>
+          <%= link_to '编辑', edit_user_path(user) if user.can_edit?(current_user) %>
+          <%= link_to '删除', user, method: :delete, data: {confirm: 'Are you sure?'} if user.can_delete?(current_user) %>
         </td>
       </tr>
   <% end %>

@@ -19,16 +19,19 @@ class ProsesController < ApplicationController
   end
 
   def create
-    @prose = Prose.new(params[:prose])
+    @prose = Prose.new(params[:prose].merge(:user_id => current_user.id))
     @prose.save
+    respond_with(@prose)
   end
 
   def update
-    @prose.update_attributes(params[:prose])
+    @prose.update_attributes(params[:prose].merge(:updated_by => current_user.id))
+    respond_with(@prose)
   end
 
   def destroy
     @prose.destroy
+    respond_with(@prose)
   end
 
   private

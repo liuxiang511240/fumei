@@ -46,4 +46,14 @@ class User
   def is_admin?
     ['liuxiang511240@163.com'].include?(self.email)
   end
+
+  def can_edit?(user)
+    return false if user.blank?
+    user.is_admin?
+  end
+
+  def can_delete?(user)
+    return false if user.blank?
+    user.is_admin?
+  end
 end

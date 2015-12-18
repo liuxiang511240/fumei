@@ -100,14 +100,14 @@ mark {
 }
 
 /* = body==============================================*/
-a {
-    text-decoration: none;
-    color: #2151bb;
-}
+/*a {*/
+/*text-decoration: none;*/
+/*color: #2151bb;*/
+/*}*/
 
-a:hover {
-    color: #e7290e;
-}
+/*a:hover {*/
+/*color: #e7290e;*/
+/*}*/
 
 body {
     font: 14px "微軟正黑體", Verdana, Lucida, Helvetica, Arial, sans-serif;
@@ -118,7 +118,7 @@ body {
     width: 1000px;
     margin: 0 auto;
     width: expression(document.body.clientWidth > 1000? "1000px": "auto" );
-    padding: 0 16px;
+    /*padding: 0 16px;*/
     text-align: left;
 }
 
@@ -189,21 +189,40 @@ table th {
     font-size: 16px;
 }
 
+.inner_top .select a {
+    color: blue;
+}
+
 .panel-footer {
     vertical-align: middle;
 }
 
+.section {
+    float: left;
+    width: 480px;
+}
+
+.section .item {
+    width: 460px;
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+}
+
 .section .top {
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #bbb;
     height: 30px;
     line-height: 30px;
-    padding-left: 15px;
     font-size: 15px;
     font-weight: bold;
+    width: 460px;
 }
 
 .section .middle {
     min-height: 200px;
+}
+
+.section .item .bottom {
+    color: #999;
 }
 
 .pagin, .pagin2 {

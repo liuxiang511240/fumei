@@ -1,6 +1,6 @@
-<h1>作者列表</h1>
+<h4>作者列表</h4>
 
-<table>
+<table width="100%">
   <tr>
     <th>姓名</th>
     <th>介绍</th>
@@ -12,12 +12,12 @@
   <% @authors.each do |author| %>
       <tr>
         <td><%= link_to author.name, author %></td>
-        <td width="60%"><%= author.description -%></td>
+        <td width="60%"><%= author.description.to_s.truncate(87) -%></td>
         <td><%= author.dynasty -%></td>
         <td><%= author.birthday -%></td>
         <td>
-          <%= link_to '编辑', edit_author_path(author) %>
-          <%= link_to '删除', author, method: :delete, data: {confirm: 'Are you sure?'} %>
+          <%= link_to '编辑', edit_author_path(author) if author.can_edit?(current_user) %>
+          <%= link_to '删除', author, method: :delete, data: {confirm: 'Are you sure?'} if author.can_delete?(current_user) %>
         </td>
       </tr>
   <% end %>

@@ -1,5 +1,9 @@
 <div class="section">
-  <div class="top">诗词</div>
+  <div class="top">诗词
+    <span style="float: right;font-size:12px;font-weight: normal;">
+      <%= link_to '更多...', poetries_path -%>
+    </span>
+  </div>
   <div class="middle">
     <% @poetries.each do |song| %>
         <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
@@ -7,7 +11,11 @@
   </div>
 </div>
 <div class="section">
-  <div class="top">美文</div>
+  <div class="top">美文
+      <span style="float: right;font-size:12px;font-weight: normal;">
+      <%= link_to '更多...', proses_path -%>
+    </span>
+  </div>
   <div class="middle">
     <% @proses.each do |song| %>
         <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
@@ -15,7 +23,11 @@
   </div>
 </div>
 <div class="section">
-  <div class="top">段子</div>
+  <div class="top">段子
+      <span style="float: right;font-size:12px;font-weight: normal;">
+      <%= link_to '更多...', pieces_path -%>
+    </span>
+  </div>
   <div class="middle">
     <% @pieces.each do |song| %>
         <%= render :partial => 'layouts/item', :locals => {:item => song} -%>
@@ -23,7 +35,11 @@
   </div>
 </div>
 <div class="section">
-  <div class="top">歌曲</div>
+  <div class="top">歌曲
+      <span style="float: right;font-size:12px;font-weight: normal;">
+      <%= link_to '更多...', songs_path -%>
+    </span>
+  </div>
   <div class="middle">
     <% @songs.each do |song| %>
         <%= render :partial => 'layouts/item', :locals => {:item => song} -%>

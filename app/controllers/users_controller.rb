@@ -16,10 +16,12 @@ class UsersController < ApplicationController
 
   def update
     @user.update_attributes(params[:user])
+    respond_with(@user)
   end
 
   def destroy
     @user.destroy
+    respond_with(@user)
   end
 
   private

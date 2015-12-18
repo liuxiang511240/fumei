@@ -12,5 +12,5 @@
   <b>作者</b>
   <%= @prose.author %>
 </p>
-<%= link_to '编辑', edit_prose_path(@prose) %> |
+<%= link_to '编辑', edit_prose_path(@prose) if @prose.can_edit?(current_user) %> |
 <%= link_to '返回', proses_path %>

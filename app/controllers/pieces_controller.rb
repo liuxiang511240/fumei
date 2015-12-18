@@ -19,16 +19,19 @@ class PiecesController < ApplicationController
   end
 
   def create
-    @piece = Piece.new(params[:piece])
+    @piece = Piece.new(params[:piece].merge(:user_id => current_user.id))
     @piece.save
+    respond_with(@piece)
   end
 
   def update
-    @piece.update_attributes(params[:piece])
+    @piece.update_attributes(params[:piece].merge(:updated_by => current_user.id))
+    respond_with(@piece)
   end
 
   def destroy
     @piece.destroy
+    respond_with(@piece)
   end
 
   private

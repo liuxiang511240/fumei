@@ -12,5 +12,5 @@
   <%= @poetry.author %>
 </p>
 
-<%= link_to '编辑', edit_poetry_path(@poetry) %> |
+<%= link_to '编辑', edit_poetry_path(@poetry) if @poetry.can_edit?(current_user) %> |
 <%= link_to '返回', poetries_path %>

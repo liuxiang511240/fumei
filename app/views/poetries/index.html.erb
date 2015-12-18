@@ -1,6 +1,6 @@
-<h1>诗词列表</h1>
+<h4>诗词列表</h4>
 
-<table>
+<table width="100%">
   <tr>
     <th>标题</th>
     <th>内容</th>
@@ -11,14 +11,13 @@
 
   <% @poetries.each do |poetry| %>
       <tr>
-        <td><%= poetry.title %></td>
-        <td width="60%"><%= poetry.content -%></td>
-        <td><%= poetry.author -%></td>
+        <td><%= link_to poetry.title, poetry %></td>
+        <td width="60%"><%= poetry.content.to_s.truncate(87) -%></td>
+        <td><%= link_to poetry.author, poetry.author_class -%></td>
         <td><%= poetry.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
         <td>
-          <%= link_to '查看', poetry %>
-          <%= link_to '编辑', edit_poetry_path(poetry) %>
-          <%= link_to '删除', poetry, method: :delete, data: {confirm: 'Are you sure?'} %>
+          <%= link_to '编辑', edit_poetry_path(poetry) if poetry.can_edit?(current_user) %>
+          <%= link_to '删除', poetry, method: :delete, data: {confirm: 'Are you sure?'} if poetry.can_delete?(current_user) %>
         </td>
       </tr>
   <% end %>

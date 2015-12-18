@@ -19,20 +19,23 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.new(params[:song])
+    @song = Song.new(params[:song].merge(:user_id => current_user.id))
     @song.save
+    respond_with(@song)
   end
 
   def update
-    @song.update_attributes(params[:song])
+    @song.update_attributes(params[:song].merge(:updated_by => current_user.id))
+    respond_with(@song)
   end
 
   def destroy
     @song.destroy
+    respond_with(@song)
   end
 
   private
-    def set_song
-      @song = Song.find(params[:id])
-    end
+  def set_song
+    @song = Song.find(params[:id])
+  end
 end

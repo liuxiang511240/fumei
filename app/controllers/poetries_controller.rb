@@ -5,7 +5,7 @@ class PoetriesController < ApplicationController
   respond_to :html
 
   def index
-    @poetries = Poetry.all.paginate(:page => params[:page]||1, :per_page => 15)
+    @poetries = Poetry.all.paginate(:page => params[:page]||1, :per_page => 10)
   end
 
   def show
@@ -19,16 +19,19 @@ class PoetriesController < ApplicationController
   end
 
   def create
-    @poetry = Poetry.new(params[:poetry])
+    @poetry = Poetry.new(params[:poetry].merge(:user_id => current_user.id))
     @poetry.save
+    respond_with(@poetry)
   end
 
   def update
-    @poetry.update_attributes(params[:poetry])
+    @poetry.update_attributes(params[:poetry].merge(:updated_by => current_user.id))
+    respond_with(@poetry)
   end
 
   def destroy
     @poetry.destroy
+    respond_with(@poetry)
   end
 
   private

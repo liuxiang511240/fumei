@@ -1,6 +1,6 @@
-<h1>歌曲列表</h1>
+<h4>歌曲列表</h4>
 
-<table>
+<table width="100%">
   <tr>
     <th>标题</th>
     <th>内容</th>
@@ -11,14 +11,13 @@
 
   <% @songs.each do |song| %>
       <tr>
-        <td><%= song.title %></td>
-        <td width="60%"><%= song.content -%></td>
-        <td><%= song.author -%></td>
+        <td><%= link_to song.title, song %></td>
+        <td width="60%"><%= song.content.to_s.truncate(87) -%></td>
+        <td><%= link_to song.author, song.author_class -%></td>
         <td><%= song.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
         <td>
-          <%= link_to '查看', song %>
-          <%= link_to '编辑', edit_song_path(song) %>
-          <%= link_to '删除', song, method: :delete, data: {confirm: 'Are you sure?'} %>
+          <%= link_to '编辑', edit_song_path(song) if song.can_edit?(current_user) %>
+          <%= link_to '删除', song, method: :delete, data: {confirm: 'Are you sure?'} if song.can_delete?(current_user) %>
         </td>
       </tr>
   <% end %>

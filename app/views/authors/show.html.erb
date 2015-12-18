@@ -15,6 +15,6 @@
   <b>生卒:</b>
   <%= @author.birthday %>
 </p>
-<%= link_to '编辑', edit_author_path(@author) %> |
+<%= link_to '编辑', edit_author_path(@author) if @author.can_edit?(current_user) %> |
 <%= link_to '返回', authors_path %>
 

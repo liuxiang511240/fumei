@@ -12,5 +12,5 @@
   <%= @song.author %>
 </p>
 
-<%= link_to '编辑', edit_song_path(@song) %> |
+<%= link_to '编辑', edit_song_path(@song) if @song.can_edit?(current_user) %> |
 <%= link_to '返回', songs_path %>

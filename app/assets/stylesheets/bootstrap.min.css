@@ -1445,7 +1445,7 @@ hr {
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 10px
 }
 
@@ -1487,7 +1487,7 @@ hr {
 }
 
 p {
-    margin: 0 0 10px
+    margin: 0 0 5px
 }
 
 .lead {
