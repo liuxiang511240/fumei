@@ -111,7 +111,9 @@ mark {
 
 body {
     font: 14px "微軟正黑體", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    line-height: 1.42857143;
     color: #333;
+    background-color: #C6E7F0
 }
 
 #container {
@@ -140,6 +142,7 @@ table th {
     -moz-box-shadow: 0px 0px 8px #999;
     -webkit-box-shadow: 0px 0px 8px #999;
     box-shadow: 0px 0px 8px #999;
+    min-height: 600px;
 }
 
 #footer {
@@ -199,7 +202,7 @@ table th {
 
 .section {
     float: left;
-    width: 480px;
+    width: 479px;
 }
 
 .section .item {
