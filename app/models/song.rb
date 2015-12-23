@@ -23,7 +23,11 @@ class Song
   field :who_deleted
   # 精华 0 否， 1 是
   field :excellent, type: Integer, default: 0
-
+  validates_presence_of :title, :message => 'title is must!'
+  validates_presence_of :content, :message => 'content is must!'
+  validates_presence_of :author, :message => 'author is must!'
+  validates_length_of :title, :maximum => 50, :message => 'Up to 50 characters'
+  validates_length_of :author, :maximum => 10, :message => 'Up to 10 characters'
   belongs_to :user
   belongs_to :author_class, :class_name => 'Author', :foreign_key => 'author_id'
   attr_accessible :title, :content, :author, :author_id, :user_id, :last_comment_id, :commented_at, :comments_count, :likes_count,

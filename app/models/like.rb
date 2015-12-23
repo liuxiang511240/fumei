@@ -11,5 +11,5 @@ class Like
   belongs_to :user, inverse_of: :likes
 
 
-  GENRE = [['诗词', 1], ['歌曲', 2], ['美文', 3], ['段子', 4]]
+  GENRE = [['诗词', 1], ['歌曲', 2], ['美文', 3], ['杂谈', 4]]
 end

@@ -1,16 +1,24 @@
-<p id="notice"><%= notice %></p>
-<p>
-  <b>标题</b>
-  <%= @song.title %>
-</p>
-<p>
-  <b>内容</b>  <br/>
-  <%= @song.content %>
-</p>
-<p>
-  <b>作者</b>
-  <%= @song.author %>
-</p>
+<%= render :partial => 'layouts/sidebar', :locals => {:author => @song.author_class} -%>
+<div class="detail">
+  <p id="notice"><%= notice %></p>
 
-<%= link_to '编辑', edit_song_path(@song) if @song.can_edit?(current_user) %> |
-<%= link_to '返回', songs_path %>
+  <p class="title">
+    <%= @song.title %>
+  </p>
+
+  <p class="source">
+    由
+    <%= @song.user.try(:name) -%>
+    于
+    <%= @song.created_at.strftime('%Y-%m-%d %H:%M:%S') -%>
+    发布
+  </p>
+
+  <p>
+    <%= @song.content %>
+  </p>
+
+  <%= link_to '编辑', edit_song_path(@song) if @song.can_edit?(current_user) %> |
+  <%= link_to '返回', songs_path %>
+</div>
+<%= render :partial => 'layouts/comments', :locals => {:subject => @song, :genre => 4} -%>

@@ -1,31 +1,9 @@
-<h4>歌曲列表</h4>
+<p style="text-align: right;"><%= link_to '谱曲', new_song_path %></p>
 
-<table width="100%">
-  <tr>
-    <th>标题</th>
-    <th>内容</th>
-    <th>作者</th>
-    <th>时间</th>
-    <th>操作</th>
-  </tr>
-
-  <% @songs.each do |song| %>
-      <tr>
-        <td><%= link_to song.title, song %></td>
-        <td width="60%"><%= song.content.to_s.truncate(87) -%></td>
-        <td><%= link_to song.author, song.author_class -%></td>
-        <td><%= song.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
-        <td>
-          <%= link_to '编辑', edit_song_path(song) if song.can_edit?(current_user) %>
-          <%= link_to '删除', song, method: :delete, data: {confirm: 'Are you sure?'} if song.can_delete?(current_user) %>
-        </td>
-      </tr>
-  <% end %>
-</table>
+<% @songs.each do |song| %>
+    <%= render :partial => 'layouts/list_item', :locals => {:item => song} -%>
+<% end %>
 <div class="panel-footer clearfix">
   <%= will_paginate @songs %>
   共 <%= @songs.total_entries %> 条
 </div>
-<br/>
-
-<%= link_to '新建歌曲', new_song_path %>

@@ -42,6 +42,11 @@ class User
   # field :failed_attempts, type: Integer, default: 0 # Only if lock strategy is :failed_attempts
   # field :unlock_token,    type: String # Only if unlock strategy is :email or :both
   # field :locked_at,       type: Time
+  validates_presence_of :name, :message => 'name is must!'
+  # validates_presence_of :email, :message => 'email is must!'
+  # validates_presence_of :password, :message => 'password is must!'
+  validates_length_of :name, :maximum => 10, :message => 'Up to 10 characters'
+  # validates_format_of :email, :with => /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/, :message => 'email format error!'
 
   def is_admin?
     ['liuxiang511240@163.com'].include?(self.email)

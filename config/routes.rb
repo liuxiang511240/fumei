@@ -12,6 +12,7 @@ FuMei::Application.routes.draw do
   
   
   resources :authors
+  resources :comments
 
 
   devise_for :users

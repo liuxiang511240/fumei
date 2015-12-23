@@ -9,6 +9,8 @@ class PoetriesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = Comment.where(outer_id: @poetry.id, genre: 1).includes(:user).sort { |x, y| y.created_at <=> x.created_at }
   end
 
   def new
@@ -31,6 +33,7 @@ class PoetriesController < ApplicationController
 
   def destroy
     @poetry.destroy
+    @poetry
     respond_with(@poetry)
   end
 

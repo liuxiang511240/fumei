@@ -1,31 +1,9 @@
-<h4>段子列表</h4>
+<p style="text-align: right;"><%= link_to '发杂谈', new_piece_path %></p>
 
-<table width="100%">
-  <tr>
-    <th>标题</th>
-    <th>内容</th>
-    <th>作者</th>
-    <th>时间</th>
-    <th>操作</th>
-  </tr>
-
-  <% @pieces.each do |piece| %>
-      <tr>
-        <td><%= link_to piece.title, piece %></td>
-        <td width="60%"><%= piece.content.to_s.truncate(87) -%></td>
-        <td><%= link_to piece.author, piece.author_class -%></td>
-        <td><%= piece.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
-        <td>
-          <%= link_to '编辑', edit_piece_path(piece) if piece.can_edit?(current_user) %>
-          <%= link_to '删除', piece, method: :delete, data: {confirm: 'Are you sure?'} if piece.can_delete?(current_user) %>
-        </td>
-      </tr>
-  <% end %>
-</table>
+<% @pieces.each do |song| %>
+    <%= render :partial => 'layouts/list_item', :locals => {:item => song} -%>
+<% end %>
 <div class="panel-footer clearfix">
   <%= will_paginate @pieces %>
   共 <%= @pieces.total_entries %> 条
 </div>
-<br/>
-
-<%= link_to '新建段子', new_piece_path %>

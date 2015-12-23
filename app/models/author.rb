@@ -1,4 +1,5 @@
 #作者
+# coding: utf-8
 class Author
   include Mongoid::Document
   include Mongoid::BaseModel
@@ -10,6 +11,15 @@ class Author
   field :dynasty, type: String, default: ''
   field :birthday, type: String, default: ''
   field :description, type: String, default: ''
+  validates_presence_of :name, :message => 'name is must!'
+  # validates_presence_of :birthday, :message => 'birthday is must!'
+  # validates_presence_of :description, :message => 'description is must!'
+  # validates_presence_of :dynasty, :message => 'dynasty is must!'
+  validates_length_of :name, :maximum => 10, :message => 'Up to 10 characters'
+  validates_length_of :dynasty, :maximum => 10, :message => 'Up to 10 characters'
+  validates_length_of :birthday, :maximum => 20, :message => 'Up to 20 characters'
+  validates_length_of :description, :maximum => 5000, :message => 'Up to 5000 characters'
+  attr_accessible :name, :face, :dynasty, :birthday, :description, :deleted_at, :created_at, :updated_at
 
   before_save :update_author
 

@@ -6,7 +6,7 @@
     <div><%= f.label '邮箱' %><br/>
       <%= f.email_field :email, autofocus: true %></div>
     <div><%= f.label '昵称' %><br/>
-      <%= f.email_field :name %></div>
+      <%= f.text_field :name %></div>
     <div><%= f.label '密码' %>
       <% if @validatable %><i>(不少于<%= @minimum_password_length %>个字符)</i>
       <% end %><br/>

@@ -9,6 +9,8 @@ class SongsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = Comment.where(outer_id: @song.id, genre: 4).includes(:user).sort { |x, y| y.created_at <=> x.created_at }
   end
 
   def new

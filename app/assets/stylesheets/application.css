@@ -113,7 +113,7 @@ body {
     font: 14px "微軟正黑體", Verdana, Lucida, Helvetica, Arial, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #C6E7F0
+    background-color: #c6E7F0
 }
 
 #container {
@@ -150,13 +150,30 @@ table th {
     text-align: center;
 }
 
-.sidebar {
-    float: right;
-    width: 200px;
+.content {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.content .detail .title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.content .detail .source {
+    color: #999;
+}
+
+.content .detail {
+    float: left;
+    width: 720px;
     height: auto;
     padding: 10px;
     margin-top: 10px;
-    background-color: #e6e5ff;
+    background-color: #F2F1E8;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -165,15 +182,57 @@ table th {
     box-shadow: 0px 0px 8px #999;
 }
 
-.content {
+.content .sidebar {
+    float: right;
+    width: 220px;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #E6E5C9;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 8px #999;
+    -webkit-box-shadow: 0px 0px 8px #999;
+    box-shadow: 0px 0px 8px #999;
+}
+
+.content .show_comment .comments {
+    margin-bottom: 20px;
+}
+
+.content .show_comment .comments .comment {
+    border-bottom: 1px dashed #999999;
+    padding: 5px;
+}
+
+.content .show_comment .comments .comment .comment-top {
+    color: #999999;
+}
+
+.content .show_comment .comments .count {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content .show_comment {
     float: left;
-    width: 100%;
-    margin: 10px 0;
+    width: 720px;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #F2F1E8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 0px 8px #999;
+    -webkit-box-shadow: 0px 0px 8px #999;
+    box-shadow: 0px 0px 8px #999;
 }
 
 .inner_top {
     height: 40px;
-    background-color: #8ccc2f;
+    background-color: #a1BF99;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -200,31 +259,24 @@ table th {
     vertical-align: middle;
 }
 
-.section {
-    float: left;
-    width: 479px;
-}
-
-.section .item {
-    width: 460px;
-    border-bottom: 1px dashed #ccc;
-    padding: 10px 0;
-}
-
 .section .top {
     border-bottom: 1px solid #bbb;
     height: 30px;
     line-height: 30px;
     font-size: 15px;
     font-weight: bold;
-    width: 460px;
 }
 
-.section .middle {
-    min-height: 200px;
+.content .item {
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 10px;
 }
 
-.section .item .bottom {
+.content .item_last {
+    border-bottom: none;
+}
+
+.content .item .bottom {
     color: #999;
 }
 

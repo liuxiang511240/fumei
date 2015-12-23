@@ -1,31 +1,8 @@
-<h4>美文列表</h4>
-
-<table width="100%">
-  <tr>
-    <th>标题</th>
-    <th>内容</th>
-    <th>作者</th>
-    <th>时间</th>
-    <th>操作</th>
-  </tr>
-
-  <% @proses.each do |prose| %>
-      <tr>
-        <td><%= link_to prose.title, prose %></td>
-        <td width="60%"><%= prose.content.to_s.truncate(87) -%></td>
-        <td><%= link_to prose.author, prose.author_class -%></td>
-        <td><%= prose.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
-        <td>
-          <%= link_to '编辑', edit_prose_path(prose) if prose.can_edit?(current_user) %>
-          <%= link_to '删除', prose, method: :delete, data: {confirm: 'Are you sure?'} if prose.can_delete?(current_user) %>
-        </td>
-      </tr>
-  <% end %>
-</table>
+<p style="text-align: right;"><%= link_to '分享美文', new_prose_path %></p>
+<% @proses.each do |song| %>
+    <%= render :partial => 'layouts/list_item', :locals => {:item => song} -%>
+<% end %>
 <div class="panel-footer clearfix">
   <%= will_paginate @proses %>
   共 <%= @proses.total_entries %> 条
 </div>
-<br/>
-
-<%= link_to '新建美文', new_prose_path %>

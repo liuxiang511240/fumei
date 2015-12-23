@@ -9,6 +9,8 @@ class PiecesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = Comment.where(outer_id: @piece.id, genre: 3).includes(:user).sort { |x, y| y.created_at <=> x.created_at }
   end
 
   def new

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :check_login
   before_filter :set_user, only: [:show, :edit, :update, :destroy]
-  skip_before_filter :authenticate_user!
 
   respond_to :html
 
@@ -27,5 +27,9 @@ class UsersController < ApplicationController
   private
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def check_login
+    redirect_to '/' unless current_user.is_admin?
   end
 end

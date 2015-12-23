@@ -9,6 +9,8 @@ class ProsesController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = Comment.where(outer_id: @prose.id, genre: 2).includes(:user).sort { |x, y| y.created_at <=> x.created_at }
   end
 
   def new

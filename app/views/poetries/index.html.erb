@@ -1,31 +1,8 @@
-<h4>诗词列表</h4>
-
-<table width="100%">
-  <tr>
-    <th>标题</th>
-    <th>内容</th>
-    <th>作者</th>
-    <th>时间</th>
-    <th>操作</th>
-  </tr>
-
-  <% @poetries.each do |poetry| %>
-      <tr>
-        <td><%= link_to poetry.title, poetry %></td>
-        <td width="60%"><%= poetry.content.to_s.truncate(87) -%></td>
-        <td><%= link_to poetry.author, poetry.author_class -%></td>
-        <td><%= poetry.created_at.strftime('%Y-%m-%d %H:%M:%S') -%></td>
-        <td>
-          <%= link_to '编辑', edit_poetry_path(poetry) if poetry.can_edit?(current_user) %>
-          <%= link_to '删除', poetry, method: :delete, data: {confirm: 'Are you sure?'} if poetry.can_delete?(current_user) %>
-        </td>
-      </tr>
-  <% end %>
-</table>
+<p style="text-align: right;"><%= link_to '赋诗一首', new_poetry_path %></p>
+<% @poetries.each do |song| %>
+    <%= render :partial => 'layouts/list_item', :locals => {:item => song} -%>
+<% end %>
 <div class="panel-footer clearfix">
   <%= will_paginate @poetries %>
   共 <%= @poetries.total_entries %> 条
 </div>
-<br/>
-
-<%= link_to '新建诗词', new_poetry_path %>
