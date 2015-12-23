@@ -113,7 +113,7 @@ body {
     font: 14px "微軟正黑體", Verdana, Lucida, Helvetica, Arial, sans-serif;
     line-height: 1.42857143;
     color: #333;
-    background-color: #c6E7F0
+    background-color: #e5f0e3
 }
 
 #container {
@@ -232,7 +232,7 @@ table th {
 
 .inner_top {
     height: 40px;
-    background-color: #a1BF99;
+    background-color: #c6E7F0;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;

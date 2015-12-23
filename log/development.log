@@ -33221,3 +33221,864 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:10:41 +0800
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:11:57 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (31.8053ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.7181ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3347ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5150ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3693ms)
+  Rendered layouts/_item.erb (3.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3319ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3090ms)
+  Rendered layouts/_item.erb (1.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4611ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.7052ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3312ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2878ms)
+  Rendered layouts/_item.erb (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (22.3610ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3521ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3660ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3047ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4191ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3402ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4230ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3483ms)
+  Rendered layouts/_item.erb (2.7ms)
+  Rendered home/index.html.erb within layouts/application (89.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4458ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 170ms (Views: 169.7ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:11:58 +0800
+Served asset /application.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:11:58 +0800
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:12:32 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (15.8098ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.5381ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3829ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4382ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2928ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3390ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3250ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3619ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3209ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3672ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3378ms)
+  Rendered layouts/_item.erb (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3490ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.2892ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3209ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3650ms)
+  Rendered layouts/_item.erb (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4230ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.7617ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3359ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3242ms)
+  Rendered layouts/_item.erb (2.2ms)
+  Rendered home/index.html.erb within layouts/application (43.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4320ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 211ms (Views: 210.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:12:33 +0800
+Served asset /application.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:12:33 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (214ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:12:56 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6809ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (22.1729ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3548ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3593ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3541ms)
+  Rendered layouts/_item.erb (2.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4060ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (27.0929ms)
+  Rendered layouts/_item.erb (29.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3719ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3190ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3440ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3421ms)
+  Rendered layouts/_item.erb (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3500ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3059ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3278ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2780ms)
+  Rendered layouts/_item.erb (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3190ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.2720ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3529ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2990ms)
+  Rendered layouts/_item.erb (2.0ms)
+  Rendered home/index.html.erb within layouts/application (68.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4289ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 169ms (Views: 168.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:12:57 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (152ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:12:57 +0800
+Served asset /application.js - 304 Not Modified (52ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:13:08 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (31.7359ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.5493ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3660ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3581ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2911ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3629ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3099ms)
+  Rendered layouts/_item.erb (1.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3009ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (4.8258ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3891ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2971ms)
+  Rendered layouts/_item.erb (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (22.2483ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3581ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4270ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3119ms)
+  Rendered layouts/_item.erb (2.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4282ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3238ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3650ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2923ms)
+  Rendered layouts/_item.erb (2.2ms)
+  Rendered home/index.html.erb within layouts/application (77.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4022ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 168ms (Views: 167.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:13:08 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (143ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:13:08 +0800
+Served asset /application.js - 304 Not Modified (75ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:13:40 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6139ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4561ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3669ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3479ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3281ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3383ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3233ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3431ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3321ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3479ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3469ms)
+  Rendered layouts/_item.erb (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4208ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.4122ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.5860ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3281ms)
+  Rendered layouts/_item.erb (3.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3457ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (1.4131ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3037ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3262ms)
+  Rendered layouts/_item.erb (2.0ms)
+  Rendered home/index.html.erb within layouts/application (21.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3319ms)
+  Rendered layouts/_header.erb (0.9ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 26ms (Views: 25.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:13:40 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (62ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:13:40 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:13:49 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6120ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (23.8459ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3359ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3603ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3140ms)
+  Rendered layouts/_item.erb (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3593ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3102ms)
+  Rendered layouts/_item.erb (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3383ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3099ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3221ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3409ms)
+  Rendered layouts/_item.erb (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3510ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3202ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3481ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3290ms)
+  Rendered layouts/_item.erb (2.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3419ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.2890ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3488ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3438ms)
+  Rendered layouts/_item.erb (2.1ms)
+  Rendered home/index.html.erb within layouts/application (41.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.7300ms)
+  Rendered layouts/_header.erb (1.5ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 47ms (Views: 46.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:13:49 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (38ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:13:49 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:13:53 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6700ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4537ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3049ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3521ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3259ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3302ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3169ms)
+  Rendered layouts/_item.erb (1.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3343ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.6940ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3593ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3881ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (23.7260ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3631ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4010ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3111ms)
+  Rendered layouts/_item.erb (2.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3669ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.2859ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3500ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2890ms)
+  Rendered layouts/_item.erb (2.2ms)
+  Rendered home/index.html.erb within layouts/application (43.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4060ms)
+  Rendered layouts/_header.erb (1.1ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 49ms (Views: 48.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:13:53 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:13:53 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:14:33 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6509ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4809ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3150ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3669ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3130ms)
+  Rendered layouts/_item.erb (2.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3939ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2809ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3567ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3121ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3278ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3309ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3099ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3521ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3238ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3669ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3390ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.6461ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3300ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3278ms)
+  Rendered layouts/_item.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (19.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4151ms)
+  Rendered layouts/_header.erb (1.2ms)
+  Rendered layouts/_top.erb (0.2ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 118ms (Views: 117.6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:14:33 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (130ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:14:33 +0800
+Served asset /application.js - 304 Not Modified (75ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-23 19:14:39 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5450ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3331ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4439ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2890ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3700ms)
+  Rendered layouts/_list_item.erb (3.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3412ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3169ms)
+  Rendered layouts/_list_item.erb (2.2ms)
+  Rendered poetries/index.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:14:39 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:14:39 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-12-23 19:14:40 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5591ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2990ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4220ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3872ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3080ms)
+  Rendered layouts/_list_item.erb (3.6ms)
+  Rendered proses/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 18ms (Views: 16.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:14:40 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:14:40 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-12-23 19:14:41 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6239ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3300ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4170ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2918ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3181ms)
+  Rendered layouts/_list_item.erb (3.4ms)
+  Rendered pieces/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.3ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:14:41 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:14:41 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-23 19:14:42 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5810ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3200ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4647ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3178ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2992ms)
+  Rendered layouts/_list_item.erb (3.6ms)
+  Rendered songs/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:14:42 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:14:42 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-23 19:14:55 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5939ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3092ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3419ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3042ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3352ms)
+  Rendered layouts/_list_item.erb (3.2ms)
+  Rendered songs/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.8ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:14:55 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:14:55 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-23 19:15:05 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5181ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3080ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3448ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3378ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3259ms)
+  Rendered layouts/_list_item.erb (3.5ms)
+  Rendered songs/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 7.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:15:05 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:15:05 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (38ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-23 19:15:16 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6428ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3510ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3722ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3521ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3159ms)
+  Rendered layouts/_list_item.erb (4.0ms)
+  Rendered songs/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 10ms (Views: 7.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:15:16 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (72ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:15:16 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-23 19:16:37 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5612ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3219ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3698ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3693ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3388ms)
+  Rendered layouts/_list_item.erb (3.4ms)
+  Rendered songs/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:37 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:37 +0800
+Compiled application.css  (1ms)  (pid 2568)
+Served asset /application.css - 200 OK (37ms)
+
+
+Started GET "/songs/5673b3c262d25d5e0300000b" for 127.0.0.1 at 2015-12-23 19:16:41 +0800
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"5673b3c262d25d5e0300000b"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6950ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "_id"=>"5673b3c262d25d5e0300000b"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3800ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=comments selector={"deleted_at"=>nil, "outer_id"=>"5673b3c262d25d5e0300000b", "genre"=>4} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3750ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil, "_id"=>{"$in"=>["5672725f62d25d92f900000a"]}} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3121ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4401ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4611ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3304ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4621ms)
+  Rendered layouts/_comment.erb (1.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3469ms)
+  Rendered layouts/_comment.erb (1.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4652ms)
+  Rendered layouts/_comment.erb (1.0ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3910ms)
+  Rendered layouts/_comment.erb (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3378ms)
+  Rendered layouts/_comment.erb (0.8ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3378ms)
+  Rendered layouts/_comment.erb (0.8ms)
+  Rendered layouts/_comments.erb (19.3ms)
+  Rendered songs/show.html.erb within layouts/application (46.7ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 86.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:41 +0800
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:41 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-12-23 19:16:41 +0800
+Served asset /liu2.jpg - 304 Not Modified (10ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:16:45 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6058ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (23.2251ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3791ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4041ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4821ms)
+  Rendered layouts/_item.erb (2.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3240ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3328ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3228ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3259ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3469ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3209ms)
+  Rendered layouts/_item.erb (2.1ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3340ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3169ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3791ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3269ms)
+  Rendered layouts/_item.erb (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3378ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.2780ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3321ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3068ms)
+  Rendered layouts/_item.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (42.4ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3300ms)
+  Rendered layouts/_header.erb (0.8ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 80ms (Views: 79.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:45 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:45 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-23 19:16:48 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5634ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3340ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4563ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3579ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3359ms)
+  Rendered layouts/_list_item.erb (3.5ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3579ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3247ms)
+  Rendered layouts/_list_item.erb (2.5ms)
+  Rendered poetries/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 20.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:48 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:48 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/proses" for 127.0.0.1 at 2015-12-23 19:16:48 +0800
+Processing by ProsesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5360ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3350ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4990ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3116ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2859ms)
+  Rendered layouts/_list_item.erb (3.7ms)
+  Rendered proses/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 34ms (Views: 31.8ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:48 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:48 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-12-23 19:16:49 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5720ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3150ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4222ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2718ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2887ms)
+  Rendered layouts/_list_item.erb (3.4ms)
+  Rendered pieces/index.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 35.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:49 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:49 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2015-12-23 19:16:50 +0800
+Processing by SongsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5929ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3209ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3400ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3183ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3190ms)
+  Rendered layouts/_list_item.erb (3.3ms)
+  Rendered songs/index.html.erb within layouts/application (31.8ms)
+  Rendered layouts/_header.erb (0.3ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 34.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:50 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:50 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2015-12-23 19:16:51 +0800
+Processing by AuthorsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6320ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3948ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4470ms)
+  Rendered authors/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 43ms (Views: 40.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:51 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:51 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pieces" for 127.0.0.1 at 2015-12-23 19:16:51 +0800
+Processing by PiecesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5381ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3152ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3612ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3188ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2837ms)
+  Rendered layouts/_list_item.erb (3.3ms)
+  Rendered pieces/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 9ms (Views: 6.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:51 +0800
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:51 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries" for 127.0.0.1 at 2015-12-23 19:16:53 +0800
+Processing by PoetriesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.6011ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.2906ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4230ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3271ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3102ms)
+  Rendered layouts/_list_item.erb (3.6ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3519ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2811ms)
+  Rendered layouts/_list_item.erb (2.1ms)
+  Rendered poetries/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 11ms (Views: 9.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:53 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:53 +0800
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/poetries/5673bdd862d25d4193000003" for 127.0.0.1 at 2015-12-23 19:16:54 +0800
+Processing by PoetriesController#show as HTML
+  Parameters: {"id"=>"5673bdd862d25d4193000003"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5808ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "_id"=>"5673bdd862d25d4193000003"} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3550ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=comments selector={"deleted_at"=>nil, "outer_id"=>"5673bdd862d25d4193000003", "genre"=>1} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3819ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"deleted_at"=>nil, "_id"=>{"$in"=>["5672725f62d25d92f900000a"]}} flags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil (0.3021ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.4802ms)
+  Rendered layouts/_sidebar.erb (0.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3619ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3510ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3357ms)
+  Rendered layouts/_comment.erb (0.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3090ms)
+  Rendered layouts/_comment.erb (0.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3440ms)
+  Rendered layouts/_comment.erb (0.7ms)
+  Rendered layouts/_comments.erb (4.4ms)
+  Rendered poetries/show.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.erb (0.2ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 37ms (Views: 34.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:16:54 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:16:54 +0800
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/liu2.jpg" for 127.0.0.1 at 2015-12-23 19:16:54 +0800
+Served asset /liu2.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2015-12-23 19:17:31 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (0.5767ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=poetries selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.4299ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"poetries", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3262ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3352ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567252f662d25ddd42000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2849ms)
+  Rendered layouts/_item.erb (2.2ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3471ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"567a6d3762d25de437000015"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2840ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=proses selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3641ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"proses", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (1.7219ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.2971ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b52e62d25d1c73000001"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3169ms)
+  Rendered layouts/_item.erb (1.9ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=pieces selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (22.7473ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"pieces", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3278ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3781ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673be2e62d25d670a000004"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3068ms)
+  Rendered layouts/_item.erb (2.3ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=songs selector={"deleted_at"=>nil, "$where"=>"excellent=1"} flags=[:slave_ok] limit=5 skip=0 batch_size=nil fields=nil (0.3681ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:count=>"songs", :query=>{"deleted_at"=>nil, "$where"=>"excellent=1"}} (0.3960ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3347ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=authors selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5673b0d462d25de26c000009"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3140ms)
+  Rendered layouts/_item.erb (1.9ms)
+  Rendered home/index.html.erb within layouts/application (41.7ms)
+  MOPED: 127.0.0.1:27017 QUERY        database=admin collection=users selector={"$query"=>{"deleted_at"=>nil, "_id"=>"5672725f62d25d92f900000a"}, "$orderby"=>{:_id=>1}} flags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil (0.3238ms)
+  Rendered layouts/_header.erb (0.8ms)
+  Rendered layouts/_top.erb (0.1ms)
+  Rendered layouts/_footer.erb (0.0ms)
+Completed 200 OK in 46ms (Views: 45.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-12-23 19:17:31 +0800
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-23 19:17:31 +0800
+Served asset /application.js - 304 Not Modified (0ms)
