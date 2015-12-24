@@ -1,7 +1,7 @@
 <div class="sidebar">
   <p>
     <%= image_tag(image_path("liu#{rand(3)}.jpg"), :width => '80px', :height => '100px', :style => 'float:right;') -%>
-    作者：<%= author.name -%>
+    作者：<%= link_to author.name, author -%>
     <br>
     <% if author.birthday.present? %>
         <%= author.birthday -%>

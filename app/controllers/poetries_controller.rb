@@ -5,7 +5,7 @@ class PoetriesController < ApplicationController
   respond_to :html
 
   def index
-    @poetries = Poetry.all.paginate(:page => params[:page]||1, :per_page => 10)
+    @poetries = Poetry.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:page => params[:page]||1, :per_page => 10)
   end
 
   def show

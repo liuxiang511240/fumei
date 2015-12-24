@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
   respond_to :html
   
   def index
-    @comments = Comment.all.paginate(:per_page => 10, :page => params[:page]||1)
+    @comments = Comment.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:per_page => 10, :page => params[:page]||1)
   end
   
   def show
@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(params[:comment].merge(:user_id => current_user.id))
     @comment.save
-    flash[:notice] = @comment.errors.full_messages.join('<br>')
+    flash[:comment_notice] = @comment.errors.full_messages.join('<br>')
     if @comment.genre==1
       redirect_to "/poetries/#{@comment.outer_id}"
     elsif @comment.genre==2

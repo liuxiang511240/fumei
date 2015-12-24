@@ -13,6 +13,7 @@ FuMei::Application.routes.draw do
   
   resources :authors
   resources :comments
+  resources :likes
 
 
   devise_for :users

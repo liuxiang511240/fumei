@@ -5,7 +5,7 @@ class AuthorsController < ApplicationController
   respond_to :html
 
   def index
-    @authors = Author.all.paginate(:per_page => 10, :page => params[:page]||1)
+    @authors = Author.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show
@@ -35,7 +35,7 @@ class AuthorsController < ApplicationController
   end
 
   private
-    def set_author
-      @author = Author.find(params[:id])
-    end
+  def set_author
+    @author = Author.find(params[:id])
+  end
 end

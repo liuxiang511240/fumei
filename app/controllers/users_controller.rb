@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   respond_to :html
 
   def index
-    @users = User.all.paginate(:per_page => 10, :page => params[:page]||1)
+    @users = User.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show

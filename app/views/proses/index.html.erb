@@ -1,4 +1,4 @@
-<p style="text-align: right;"><%= link_to '分享美文', new_prose_path %></p>
+<p class="publish clearfix"><%= link_to '分享美文', new_prose_path %></p>
 <% @proses.each do |song| %>
     <%= render :partial => 'layouts/list_item', :locals => {:item => song} -%>
 <% end %>

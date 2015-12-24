@@ -12,7 +12,13 @@
       <%= item.user.try :name -%>
       于
       <%= item.created_at.strftime('%Y-%m-%d %H:%M:%S') -%>
-      发布，
+      发布；
+      收到
+      <%= link_to item.comments_count.to_i, item -%>
+      条评论，
+      <%= link_to item.likes_count.to_i, item -%>
+      条喜欢。
+      &nbsp;&nbsp;
       作者：<%= link_to item.author, item.author_class -%>
     </p>
   </div>

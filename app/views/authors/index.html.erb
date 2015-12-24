@@ -1,6 +1,6 @@
-<h4>作者列表</h4>
+<p class="publish clearfix"><%= link_to '新建作者', new_author_path %></p>
 
-<table width="100%">
+<table width="100%" style="margin-top: 15px">
   <tr>
     <th>姓名</th>
     <th>介绍</th>
@@ -12,7 +12,7 @@
   <% @authors.each do |author| %>
       <tr>
         <td><%= link_to author.name, author %></td>
-        <td width="60%"><%= author.description.to_s.truncate(87) -%></td>
+        <td width="60%"><%= author.description.to_s.truncate(67) -%></td>
         <td><%= author.dynasty -%></td>
         <td><%= author.birthday -%></td>
         <td>
@@ -26,6 +26,3 @@
   <%= will_paginate @authors %>
   共 <%= @authors.total_entries %> 条
 </div>
-<br/>
-
-<%= link_to '新建作者', new_author_path %>

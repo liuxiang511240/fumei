@@ -5,7 +5,7 @@ class PiecesController < ApplicationController
   respond_to :html
 
   def index
-    @pieces = Piece.all.paginate(:per_page => 10, :page => params[:page]||1)
+    @pieces = Piece.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show

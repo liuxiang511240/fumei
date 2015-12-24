@@ -1,4 +1,4 @@
-<p style="text-align: right;"><%= link_to '谱曲', new_song_path %></p>
+<p class="publish clearfix"><%= link_to '谱曲', new_song_path %></p>
 
 <% @songs.each do |song| %>
     <%= render :partial => 'layouts/list_item', :locals => {:item => song} -%>

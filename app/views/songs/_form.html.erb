@@ -11,19 +11,18 @@
         </div>
     <% end %>
     <div class="field">
-      <%= f.label '标题' %>
-      <br>
+      <%= f.label '标题' %>：
       <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label '作者' %>：
+      <%= f.text_field :author %>
     </div>
     <div class="field">
       <%= f.label '内容' %>
       <br>
-      <%= f.text_area :content, :size => '87x15' %>
-    </div>
-    <div class="field">
-      <%= f.label '作者' %>
-      <br>
-      <%= f.text_field :author %>
+      <!--<textarea id="editor" placeholder="这里输入内容" autofocus></textarea>-->
+      <%= f.text_area :content, :size => '87x15', :id => 'editor' %>
     </div>
     <div class="actions">
       <%= f.submit '确定' %>
