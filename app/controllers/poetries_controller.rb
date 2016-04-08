@@ -5,12 +5,12 @@ class PoetriesController < ApplicationController
   respond_to :html
 
   def index
-    @poetries = Poetry.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:page => params[:page]||1, :per_page => 10)
+    @poetries = Poetry.desc(:created_at).paginate(:page => params[:page]||1, :per_page => 10)
   end
 
   def show
     @comment = Comment.new
-    @comments = Comment.where(outer_id: @poetry.id, genre: 1).includes(:user).sort { |x, y| y.created_at <=> x.created_at }
+    @comments = Comment.where(outer_id: @poetry.id, genre: 1).includes(:user).desc(:created_at)
   end
 
   def new

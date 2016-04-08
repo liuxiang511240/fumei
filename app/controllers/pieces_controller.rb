@@ -5,12 +5,12 @@ class PiecesController < ApplicationController
   respond_to :html
 
   def index
-    @pieces = Piece.all.sort { |x, y| y.created_at <=> x.created_at }.paginate(:per_page => 10, :page => params[:page]||1)
+    @pieces = Piece.desc(:created_at).paginate(:per_page => 10, :page => params[:page]||1)
   end
 
   def show
     @comment = Comment.new
-    @comments = Comment.where(outer_id: @piece.id, genre: 3).includes(:user).sort { |x, y| y.created_at <=> x.created_at }
+    @comments = Comment.where(outer_id: @piece.id, genre: 3).includes(:user).desc(:created_at)
   end
 
   def new
