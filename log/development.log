@@ -48779,3 +48779,66 @@ Served asset /application.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2015-12-24 18:02:26 +0800
 Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-05-21 17:06:12 +0800
+Processing by HomeController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.0062ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3391ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.2649ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.0008ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.2912ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (21.1301ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7452ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5709ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.7330ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6600ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5959ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5620ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.4800ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.3968ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5442ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.5740ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (3.1953ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.8801ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.6469ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (2.8248ms)
+  MOPED: Could not connect to any node in replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>, refreshing list.
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} (1.9720ms)
+  Rendered home/index.html.erb within layouts/application (5155.0ms)
+Completed 500 Internal Server Error in 5247ms
+
+ActionView::Template::Error (Could not connect to any secondary or primary nodes for replica set <Moped::Cluster nodes=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+    4:       <%= link_to '更多...', poetries_path -%>
+    5:     </span>
+    6:   </div>
+    7:   <div class="middle">
+    8:     <% @poetries.each_with_index do |song, i| %>
+    9:         <%= render :partial => 'layouts/item', :locals => {:item => song, :is_last => @poetries.size==i+1} -%>
+    10:     <% end %>
+  app/views/home/index.html.erb:7:in `each_with_index'
+  app/views/home/index.html.erb:7:in `_app_views_home_index_html_erb__2464107160091844876_70170835109460'
+
+
+  Rendered /Users/zhangjing/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/zhangjing/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /Users/zhangjing/.rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
